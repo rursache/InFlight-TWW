@@ -1,0 +1,27 @@
+## Interface: 100207
+## Title: InFlight_Load
+## Notes: Loader for InFlight
+## Notes-deDE: Loader für InFlight
+## Notes-esES: Cargador para InFlight
+## Notes-esMX: Cargador para InFlight
+## Notes-frFR: Loader pour InFlight
+## Notes-itIT: Caricatore per InFlight
+## Notes-koKR: InFlight 용 로더
+## Notes-ptBR: Loader para InFlight
+## Notes-ruRU: Загрузчик для InFlight
+## Notes-zhCN: InFlight 的載入器
+## Notes-zhTW: InFlight 的裝載機
+## Author: TotalPackage, Deranjata
+## Version: 10.2.7
+
+## X-Category: Interface Enhancements
+
+## OptionalDeps: Ace3
+
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+embeds.xml
+
+locales\locales.xml
+InFlight_Load.lua

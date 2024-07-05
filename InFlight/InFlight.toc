@@ -1,0 +1,27 @@
+## Interface: 100002
+## Title: InFlight
+## Notes: Status bar timer for your flight paths
+## Notes-deDE: Zeitanzeigenleiste für Ihre Flugrouten
+## Notes-esES: Temporizador barra de estado para sus rutas de vuelo
+## Notes-esMX: Temporizador barra de estado para sus rutas de vuelo
+## Notes-frFR: Minuterie de barre d'état pour vos trajectoires de vol
+## Notes-itIT: Timer della barra di stato per le tue traiettorie di volo
+## Notes-koKR: 비행 경로에 대한 상태 표시 줄 타이머
+## Notes-ptBR: Temporizador da barra de status para suas rotas de voo
+## Notes-ruRU: Таймер строки состояния для ваших маршрутов полета
+## Notes-zhCN: 您的航班路径的状态栏计时器
+## Notes-zhTW: 您的航班路徑的狀態欄計時器
+## Author: TotalPackage, Deranjata
+## Version: 10.0.25
+
+## SavedVariables: InFlightDB
+## Dependencies: InFlight_Load
+## OptionalDeps: Ace3, LibSharedMedia-3.0
+
+## LoadOnDemand: 1
+
+embeds.xml
+
+locales\locales.xml
+Defaults.lua
+InFlight.lua
