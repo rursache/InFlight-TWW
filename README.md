@@ -1,2 +1,36 @@
-# InFlight-Taxi-Timer
-InFlight Taxi Timer World of Warcraft Addon
+# InFlight WW - Taxi-Timer
+The fixed version of the popular InFlight addon for World of Warcraft (Retail)
+
+This fork comes with the following fixes and improvements:
+- Added support for 10.2.7
+- Added a python script that merges all the `InFlight.lua` saved values flight path times from the users with the `Default.lua`.
+  - This is the easiest way to have an up to date database
+  - Please contribute by providing your `InFlight.lua` file (found in `WoW/_retail_\WTF\Account\NAME\SavedVariables`) [here](https://github.com/rursache/InFlight-Taxi-Timer/issues/1)
+
+Updated release: Curseforge | [GitHub](https://github.com/rursache/InFlight-Taxi-Timer/releases)
+
+----
+
+## InFlight
+
+![img](https://i.imgur.com/CTPjlAw.jpeg)
+
+Developed initially by: [totalpackage](https://www.wowinterface.com/forums/member.php?action=getinfo&userid=27891), [R_X](https://www.wowinterface.com/forums/member.php?action=getinfo&userid=341594), [Uitat](https://www.wowinterface.com/forums/member.php?action=getinfo&userid=272556)
+
+Original release: [Curseforge](https://www.curseforge.com/wow/addons/inflight-taxi-timer) | [WoWInterface](https://www.wowinterface.com/downloads/info11178-InFlight.html#info)
+
+## Description
+InFlight is a simple taxi flight timer mod that lets you know how long it will take to get to your destination. Other mods may provide a similar feature, however, InFlight is a lightweight alternative that, in most cases, is leaner, faster and uses a lot less memory (which is the main motivation behind InFlight).
+
+## Features:
+- Take-off confirmation
+- Many customization options for the look of the timer bar
+- Support for Druid-only and some other special flight paths
+- Already has most flight times
+- Learns new flight times or updates existing flight times when taxis are used
+- Flight times added to tooltip on flight map
+
+## How to Use:
+InFlight is LoadOnDemand to use less memory when not needed
+'/inflight', right-click on the timer bar, or check interface options to customize
+Shift left-click and drag to move the timer bar
