@@ -2,10 +2,10 @@
 The fixed version of the popular InFlight addon for World of Warcraft (Retail)
 
 This fork comes with the following fixes and improvements:
-- Added support for 10.2.7
-- Added a python script that merges all the `InFlight.lua` saved values flight path times from the users with the `Default.lua`.
-  - This is the easiest way to have an up to date database
-  - Please contribute by providing your `InFlight.lua` file (found in `WoW/_retail_\WTF\Account\NAME\SavedVariables`) [here](https://github.com/rursache/InFlight-Taxi-Timer/issues/1)
+- Added support for 10.2.7 and 11.0.0
+- Added a [python script]() that merges all the `InFlight.lua` saved values flight path times from the users with the `Default.lua` from the addon.
+  - This is the easiest way to have an up to date database for everyone
+  - Please contribute by providing your `InFlight.lua` file [here](https://github.com/rursache/InFlight-Taxi-Timer/issues/1)
 
 Updated release: Curseforge | [GitHub](https://github.com/rursache/InFlight-Taxi-Timer/releases)
 
