@@ -1,4 +1,7 @@
 # InFlight WW - Taxi-Timer
+
+![InFlight-WW](https://raw.githubusercontent.com/rursache/InFlight-WW/master/icon.jpg)
+
 The fixed version of the popular InFlight addon for World of Warcraft (Retail)
 
 This fork comes with the following fixes and improvements:
