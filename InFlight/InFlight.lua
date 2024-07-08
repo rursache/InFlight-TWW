@@ -39,13 +39,20 @@ local function ShortenName(name)  -- shorten name to lighten saved vars and disp
 	return gsub(name, L["DestParse"], "")
 end
 
+-- Fix for Zaralek Cavern Flight Bug provided by JarfJarfBinks @ wowinterface.com
 local function GetNodeID(slot)
-	local taximapNodes = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID())
-	for _, taxiNodeData in ipairs(taximapNodes) do
-		if (slot == taxiNodeData.slotIndex) then
-			return taxiNodeData.nodeID
-		end
-	end
+    local taxiMapIDs = { GetTaxiMapID(), FlightMapFrame.mapID }
+    for _,taxiMapID in ipairs(taxiMapIDs) do
+        if taxiMapID then
+        local taximapNodes = C_TaxiMap.GetAllTaxiNodes(taxiMapID)
+            for _, taxiNodeData in ipairs(taximapNodes) do
+                if (slot == taxiNodeData.slotIndex) then
+                    PrintD("Dest: " ..taxiNodeData.name.. " - " ..taxiNodeData.nodeID)
+                    return taxiNodeData.nodeID
+                end
+            end
+        end
+    end
 end
 
 local function SetPoints(f, lp, lrt, lrp, lx, ly, rp, rrt, rrp, rx, ry)
@@ -136,7 +143,7 @@ local function postTaxiNodeOnButtonEnter(button) -- adds duration info to taxi n
 end
 
 local function postFlightNodeOnButtonEnter(button) -- adds duration info to flight node tooltips
---    if button.taxiNodeData.state == Enum.FlightPathState.Current and GetTaxiMapID() ~= 994 then -- TEST
+--    if button.taxiNodeData.state == Enum.FlightPathState.Current and GetTaxiMapID() ~= 994 then -- add NodeID-Info on TT
 --        gtt:AddLine("NodeID: "..button.taxiNodeData.nodeID, 0.2, 0.8, 0.2)
 --        gtt:Show()
 --        return
@@ -148,10 +155,10 @@ local function postFlightNodeOnButtonEnter(button) -- adds duration info to flig
 
 	local duration = vars[taxiSrc] and vars[taxiSrc][button.taxiNodeData.nodeID]
 	if duration then
---        gtt:AddLine("NodeID: "..button.taxiNodeData.nodeID, 0.2, 0.8, 0.2) -- TEST
+--        gtt:AddLine("NodeID: "..button.taxiNodeData.nodeID, 0.2, 0.8, 0.2) -- add NodeID-Info on TT
 		addDuration(duration)
 	else
---        gtt:AddLine("NodeID: "..button.taxiNodeData.nodeID, 0.2, 0.8, 0.2) -- TEST
+--        gtt:AddLine("NodeID: "..button.taxiNodeData.nodeID, 0.2, 0.8, 0.2) -- add NodeID-Info on TT
 		addDuration(GetEstimatedTime(button.taxiNodeData.slotIndex) or 0, true)
 	end
 end
@@ -212,8 +219,8 @@ function InFlight:LoadBulk()  -- called from InFlight_Load
 	end
 
 	-- Update default data
-	if InFlightDB.dbinit ~= 920 or debug then
-		InFlightDB.dbinit = 920
+	if InFlightDB.dbinit ~= 1015 or debug then
+		InFlightDB.dbinit = 1015
 		InFlightDB.upload = nil
 		Print(L["DefaultsUpdated"])
 
@@ -584,12 +591,9 @@ do  -- timer bar
 
 						msg = nil
 					end
-					
-					local s = pcall(function()
-						vars[taxiSrc][taxiDst] = newTime
-					end)
-					
-					if s and msg and db.chatlog then
+
+					vars[taxiSrc][taxiDst] = newTime
+					if msg and db.chatlog then
 						Print(msg)
 					end
 				end
