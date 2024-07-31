@@ -1,5 +1,6 @@
 name: Package and release to Curseforge
 on:
+  workflow_dispatch:
   push:
     tags:
       - '**'
