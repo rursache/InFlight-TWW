@@ -1,0 +1,4 @@
+package-as: InFlight
+ignore: 
+  - icon.jpg
+  - merge.py
