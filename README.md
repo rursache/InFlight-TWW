@@ -10,7 +10,7 @@ This fork comes with the following fixes and improvements:
   - This is the easiest way to have an up to date database for everyone
   - Please contribute by providing your `InFlight.lua` file [here](https://github.com/rursache/InFlight-Taxi-Timer/issues/1)
 
-Updated release: ~~[Curseforge](https://legacy.curseforge.com/wow/addons/inflight-ww)~~ | [GitHub](https://github.com/rursache/InFlight-Taxi-Timer/releases)
+Updated release: [Curseforge](https://legacy.curseforge.com/wow/addons/inflight-ww) | [GitHub](https://github.com/rursache/InFlight-Taxi-Timer/releases)
 
 ----
 
