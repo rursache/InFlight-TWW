@@ -126,7 +126,8 @@ if GetAddOnEnableState(UnitName("player"), "InFlight") == 2 then
 			end
 		end)
 		panel:Hide()
-		local category = Settings.RegisterCanvasLayoutCategory(self, "InFlight")
+		category, layout = Settings.RegisterCanvasLayoutCategory(panel, panel.name, panel.name)
+		category.ID = panel.name
 		Settings.RegisterAddOnCategory(category)
 		InFlight.SetupInFlight = nil
 	end
