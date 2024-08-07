@@ -12,7 +12,7 @@
 ## Notes-zhCN: InFlight 的載入器
 ## Notes-zhTW: InFlight 的裝載機
 ## Author: TotalPackage, Deranjata, Radu Ursache
-## Version: 11.0.1
+## Version: 11.0.2
 
 ## X-Category: Interface Enhancements
 
