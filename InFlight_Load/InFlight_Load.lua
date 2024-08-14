@@ -1,15 +1,21 @@
 local InFlight = CreateFrame("Frame", "InFlight")  -- no parent is intentional
 local self = InFlight
+-- new variables for TWW API changes
+local category, layout 
+local loadAddon = C_AddOns and C_AddOns.LoadAddOn
+local C_AddOns_GetAddOnEnableState = C_AddOns.GetAddOnEnableState
+-- end new variables
 InFlight:SetScript("OnEvent", function(this, event, ...) this[event](this, ...) end)
 InFlight:RegisterEvent("ADDON_LOADED")
 
 -- LOCAL FUNCTIONS
 local function LoadInFlight()
 	if not InFlight.ShowOptions then
-		LoadAddOn("InFlight")
+		--LoadAddOn("InFlight")
+		local loaded, reason = loadAddon("InFlight")
 	end
-
-	return GetAddOnEnableState(UnitName("player"), "InFlight") == 2 and InFlight.ShowOptions and true or nil
+	--return GetAddOnEnableState(UnitName("player"), "InFlight") == 2 and InFlight.ShowOptions and true or nil
+	return C_AddOns_GetAddOnEnableState("InFlight") and InFlight.ShowOptions and true or nil
 end
 
 -----------------------------------------
@@ -39,7 +45,7 @@ function InFlight:TAXIMAP_OPENED(...)
 end
 
 -- maybe this stuff gets garbage collected if InFlight isn't loadable
-if GetAddOnEnableState(UnitName("player"), "InFlight") == 2 then
+if if C_AddOns_GetAddOnEnableState("InFlight") == 2 then
 	-- GLOBALS -> LOCAL
 	local ipairs, strfind = ipairs, strfind
 
