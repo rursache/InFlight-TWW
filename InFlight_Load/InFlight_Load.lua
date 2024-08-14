@@ -45,7 +45,7 @@ function InFlight:TAXIMAP_OPENED(...)
 end
 
 -- maybe this stuff gets garbage collected if InFlight isn't loadable
-if if C_AddOns_GetAddOnEnableState("InFlight") == 2 then
+if C_AddOns_GetAddOnEnableState("InFlight") == 2 then
 	-- GLOBALS -> LOCAL
 	local ipairs, strfind = ipairs, strfind
 
