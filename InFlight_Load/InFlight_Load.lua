@@ -15,7 +15,7 @@ local function LoadInFlight()
 		local loaded, reason = loadAddon("InFlight")
 	end
 	--return GetAddOnEnableState(UnitName("player"), "InFlight") == 2 and InFlight.ShowOptions and true or nil
-	return C_AddOns_GetAddOnEnableState("InFlight") and InFlight.ShowOptions and true or nil
+	return C_AddOns_GetAddOnEnableState("InFlight", UnitName("player")) == 2 and InFlight.ShowOptions and true or nil
 end
 
 -----------------------------------------
@@ -45,7 +45,7 @@ function InFlight:TAXIMAP_OPENED(...)
 end
 
 -- maybe this stuff gets garbage collected if InFlight isn't loadable
-if C_AddOns_GetAddOnEnableState("InFlight") == 2 then
+if C_AddOns_GetAddOnEnableState("InFlight", UnitName("player")) == 2 then
 	-- GLOBALS -> LOCAL
 	local ipairs, strfind = ipairs, strfind
 
