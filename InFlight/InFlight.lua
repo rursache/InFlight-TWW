@@ -776,7 +776,7 @@ function InFlight:SetLayout(this)  -- setups the options in the default interfac
 	SetPoints(t2, "TOPLEFT", t1, "BOTTOMLEFT", 0, -8, "RIGHT", this, "RIGHT", -32, 0)
 	t2:SetNonSpaceWrap(true)
 	local function GetInfo(field)
-		return GetAddOnMetadata("InFlight", field) or "N/A"
+		return C_AddOns.GetAddOnMetadata("InFlight", field) or "N/A"
 	end
 
 	t2:SetFormattedText("|cff00aaffAuthor:|r %s\n|cff00aaffVersion:|r %s\n\n%s|r", GetInfo("Author"), GetInfo("Version"), GetInfo("Notes"))
