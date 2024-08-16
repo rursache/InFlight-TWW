@@ -1,4 +1,4 @@
-# InFlight WW - Taxi-Timer
+# InFlight TWW - Taxi-Timer
 
 ![InFlight-WW](https://raw.githubusercontent.com/rursache/InFlight-WW/master/icon.jpg)
 
