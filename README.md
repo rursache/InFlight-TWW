@@ -1,16 +1,16 @@
 # InFlight TWW - Taxi-Timer
 
-![InFlight-WW](https://raw.githubusercontent.com/rursache/InFlight-WW/master/icon.jpg)
+![InFlight-WW](https://raw.githubusercontent.com/rursache/InFlight-TWW/master/icon.jpg)
 
 The fixed version of the popular InFlight addon for World of Warcraft (Retail)
 
 This fork comes with the following fixes and improvements:
 - Added support for 10.2.7, 11.0.0 and 11.0.2
-- Added a [python script](https://github.com/rursache/InFlight-WW/blob/master/merge.py) that merges all the `InFlight.lua` saved values flight path times from the users with the `Default.lua` from the addon.
+- Added a [python script](https://github.com/rursache/InFlight-TWW/blob/master/merge.py) that merges all the `InFlight.lua` saved values flight path times from the users with the `Default.lua` from the addon.
   - This is the easiest way to have an up to date database for everyone
-  - Please contribute by providing your `InFlight.lua` file [here](https://github.com/rursache/InFlight-Taxi-Timer/issues/1)
+  - Please contribute by providing your `InFlight.lua` file [here](https://github.com/rursache/InFlight-TWW/issues/1)
 
-Updated release: [Curseforge](https://legacy.curseforge.com/wow/addons/inflight-ww) | [GitHub](https://github.com/rursache/InFlight-Taxi-Timer/releases)
+Updated release: [Curseforge](https://legacy.curseforge.com/wow/addons/inflight-ww) | [GitHub](https://github.com/rursache/InFlight-TWW/releases)
 
 ----
 
