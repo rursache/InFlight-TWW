@@ -1,4 +1,4 @@
-## Interface: 110000, 110002
+## Interface: 110002
 ## Title: InFlight_Load
 ## Notes: Loader for InFlight
 ## Notes-deDE: Loader für InFlight
