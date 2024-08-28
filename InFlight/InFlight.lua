@@ -907,10 +907,10 @@ function InFlight.ShowOptions()
 
 			if a1 then
 				local pv = ColorPickerFrame.previousValues
-				dbc.r, dbc.g, dbc.b, dbc.a = pv.r, pv.g, pv.b, 1 - pv.opacity
+				dbc.r, dbc.g, dbc.b, dbc.a = pv.r, pv.g, pv.b, 1 - pv.a
 			else
 				dbc.r, dbc.g, dbc.b = ColorPickerFrame:GetColorRGB()
-				dbc.a = 1 - OpacitySliderFrame:GetValue()
+				dbc.a = 1 - ColorPickerFrame:GetColorAlpha()
 			end
 
 			InFlight:UpdateLook()
