@@ -1,4 +1,4 @@
-## Interface: 110002
+## Interface: 110005
 ## Title: InFlight_Load
 ## Notes: Loader for InFlight
 ## Notes-deDE: Loader für InFlight
@@ -12,7 +12,7 @@
 ## Notes-zhCN: InFlight 的載入器
 ## Notes-zhTW: InFlight 的裝載機
 ## Author: TotalPackage, Deranjata, Radu Ursache
-## Version: 11.0.5
+## Version: 11.0.7
 ## X-Category: Interface Enhancements
 ## OptionalDeps: Ace3
 ## LoadManagers: AddonLoader
