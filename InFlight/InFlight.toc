@@ -8,7 +8,7 @@
 ## Notes-itIT: Timer della barra di stato per le tue traiettorie di volo
 ## Notes-koKR: 비행 경로에 대한 상태 표시 줄 타이머
 ## Notes-ptBR: Temporizador da barra de status para suas rotas de voo
-## Notes-ruRU: Таймер строки состояния для ваших маршрутов полета
+## Notes-ruRU: Таймер строки состояния для Ваших маршрутов полета
 ## Notes-zhCN: 您的航班路径的状态栏计时器
 ## Notes-zhTW: 您的航班路徑的狀態欄計時器
 ## Author: TotalPackage, Deranjata, Radu Ursache
