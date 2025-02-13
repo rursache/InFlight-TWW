@@ -1,3 +1,4 @@
+#This script does not seem to work and I am renaming it to indicate that it should not be used. Keeping it around for preservation purposes.
 import re
 
 def parse_lua_table(content, key):
