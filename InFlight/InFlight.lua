@@ -219,8 +219,10 @@ function InFlight:LoadBulk()  -- called from InFlight_Load
 	end
 
 	-- Update default data
-	if InFlightDB.dbinit ~= 1015 or debug then
-		InFlightDB.dbinit = 1015
+	-- dbinit value just matches current game version e.g. 11.0.7 is 1107. This should be updated with each patch release after merging submitted InFlight.lua user data into Defaults.lua.
+	-- Doing this will clear the InFlight.lua data and accurately represent number of flight paths to contribute in future releases.
+	if InFlightDB.dbinit ~= 1107 or debug then
+		InFlightDB.dbinit = 1107
 		InFlightDB.upload = nil
 		Print(L["DefaultsUpdated"])
 
