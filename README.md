@@ -1,3 +1,7 @@
+⚠️ Please migrate to: https://www.curseforge.com/wow/addons/inflight-taxi-timer
+
+----
+
 # InFlight TWW - Taxi-Timer
 
 ![InFlight-WW](https://raw.githubusercontent.com/rursache/InFlight-TWW/master/icon.jpg)
